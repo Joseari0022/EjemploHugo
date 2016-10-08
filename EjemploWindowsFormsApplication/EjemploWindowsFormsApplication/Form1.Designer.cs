@@ -42,7 +42,7 @@
             this.NombretextBox.Location = new System.Drawing.Point(109, 72);
             this.NombretextBox.Name = "NombretextBox";
             this.NombretextBox.Size = new System.Drawing.Size(100, 22);
-            this.NombretextBox.TabIndex = 0;
+            this.NombretextBox.TabIndex = 2;
             // 
             // label1
             // 
@@ -57,8 +57,9 @@
             // 
             this.ContrasenatextBox.Location = new System.Drawing.Point(153, 141);
             this.ContrasenatextBox.Name = "ContrasenatextBox";
+            this.ContrasenatextBox.PasswordChar = '*';
             this.ContrasenatextBox.Size = new System.Drawing.Size(100, 22);
-            this.ContrasenatextBox.TabIndex = 2;
+            this.ContrasenatextBox.TabIndex = 3;
             // 
             // label2
             // 
@@ -74,7 +75,7 @@
             this.IdtextBox.Location = new System.Drawing.Point(139, 26);
             this.IdtextBox.Name = "IdtextBox";
             this.IdtextBox.Size = new System.Drawing.Size(100, 22);
-            this.IdtextBox.TabIndex = 4;
+            this.IdtextBox.TabIndex = 1;
             // 
             // label3
             // 
@@ -93,6 +94,7 @@
             this.Savebutton.TabIndex = 6;
             this.Savebutton.Text = "guardar";
             this.Savebutton.UseVisualStyleBackColor = true;
+            this.Savebutton.Click += new System.EventHandler(this.Savebutton_Click);
             // 
             // Form1
             // 

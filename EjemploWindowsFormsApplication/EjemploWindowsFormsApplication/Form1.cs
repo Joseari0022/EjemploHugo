@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BLL;
+using Entidades;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,6 +16,19 @@ namespace EjemploWindowsFormsApplication
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void LlenarClase(Usuarios u)
+        {
+            u.NombreUsuario = NombretextBox.Text;
+            u.Contrasena = ContrasenatextBox.Text;
+        }
+        private void Savebutton_Click(object sender, EventArgs e)
+        {
+            Usuarios usuario = new Usuarios();
+
+            LlenarClase(usuario);
+            UsuariosBLL.Insetar(usuario);
         }
     }
 }
